@@ -69,7 +69,7 @@ Example responses:
         print(f'Response type: {type(response)}')
 
         if response and 'specify the' in response:
-            raise ValueError('Please specify the number of bedrooms, bathrooms and square footage size in your request.')
+            raise ValueError('Your request is incomplete. Please provide the number of bedrooms, bathrooms, and the square footage to proceed.')
 
         estimated_duration = response or 0
         bedrooms = int('3')  # Hardcoded for testing, matching TypeScript version
